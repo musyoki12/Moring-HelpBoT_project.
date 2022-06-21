@@ -1,0 +1,70 @@
+{
+    "softwares": [
+      {
+        "id": 1,
+        "name": "Node js",
+        "description": "Node.js (Node) is an open source development platform for executing JavaScript code server-side",
+        "licensce": "open source",
+        "author":"mark",
+        "version":"version 10.22",
+        "package_file":"node.js zip",
+        "current_releases": "LTS_Fermium_2020-04-21_2020-10-27",
+        "reviews": [
+          "scalable web applications with less engineering effor!!",
+          "it is stable",
+          "High speed and performance",
+          "Extensive library and tools!!!"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "visual code studio ",
+        "description": "vs code  is an open source code editor for all languages",
+        "licensce": "open source",
+        "author":"Brian",
+        "version":"12.34",
+        "package_file":"vs code. zip",
+        "current_releases": "LTS_Fermium_2020-04-21_2022-10-27",
+        "reviews": [
+          " really love this editor because it helps you a lot with its prediction and a lot of programing language supported.!!",
+          "it is stable no crashes",
+          "It supports almost all popular codding languages.",
+          "Got Extensive plugins and tools!!!"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Ruby on Rails",
+        "description": "Rails is a full-stack framework",
+        "licensce": "open source",
+        "author":"ndinda",
+        "version":"7.03",
+        "package_file":"Rubyonrail.zip",
+        "current_releases": "Rail 7.0.3-released may9,2022",
+        "reviews": [
+          "scaffolding feature gives you fastest development experience",
+          "mvc structure facilates manageable file structure",
+          "gem library gives you some well developed and tested features without investing time in those features",
+          "Building Web application quickly."
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Github desktop App",
+        "description": "RGitHub Desktop is an open source tool that enables you to be more productive",
+        "licensce": "open source",
+        "author":"Musyoki",
+        "version":"7.03",
+        "package_file":"Rubyonrail.zip",
+        "current_releases": "Rail 7.0.3-released may9,2022",
+        "reviews": [
+          "easy web page hosting",
+          "easy monitoring of changes to all branches",
+          "allows for seamless collaboration without compromising the integrity of the original project",
+          "GitHub Desktop allows developers to synchronize branches, clone repositories, and more. "
+        ]
+      }
+
+    ]
+    
+  }
