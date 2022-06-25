@@ -56,13 +56,16 @@ searchButton.addEventListener("submit",(e)=>{
     matchList.appendChild(card)
   
     }
-    else(e.target.name.value === "Ruby on Rails"){
+    else if(e.target.name.value === "Github desktop App"){
       let card = document.createElement("h3")
       card.setAttribute("class","details")
-      card.textContent = "Rails is a full-stack framework"
+      card.textContent = "RGitHub Desktop is an open source tool that enables you to be more productive"
       matchList.appendChild(card)
     
       }
+else{
+  console.log("sorry sofy can't get you what you wanted.please buy me a cup of coffee ")
+}
 })
 // console.log(searchButton)
 // search softwares.json and filiter it
