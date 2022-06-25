@@ -1,0 +1,128 @@
+body {
+  padding: 25px;
+  background-color: white(231, 212, 212);
+  background-image: url(./images/bot.webp);
+  color: black;
+  font-size: 25px;
+}
+.dark-mode {
+  background-color: black;
+  color: rgba(255, 255, 255, 0.849);
+}
+.light-mode {
+  background-color:rgb(40, 200, 221);
+  color: black;
+}
+#sofy h1 {
+  text-emphasis-color: white(72, 189, 189);
+}
+/* menu styling */
+.vertical-menu {
+  width: 200px; /* Set a width if you like */
+}
+
+.vertical-menu a {
+  background-color: #eee; /* Grey background color */
+  color: black; /* Black text color */
+  display: block; /* Make the links appear below each other */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+.vertical-menu a.active {
+  background-color: #04AA6D; /* Add a green color to the "active/current" link */
+  color: white;
+}
+.vertical-menu {
+  width: 200px;
+  height: 150px;
+  overflow-y: auto;
+}
+
+/* image */
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 40px;
+}
+
+.tablinks{
+  float:left;
+}
+
+/* search 
+.search-bar{
+float: right;
+padding-right: 50px;
+padding-top: 10px;
+padding-bottom: 100px;
+} */
+
+/* styling search bar */
+/* .search input[type=text]{
+  width:300px;
+  height:25px;
+  border-radius:25px;
+  border: none;
+}
+   
+.search{
+  float:right;
+  margin:7px;
+}
+   
+.search button{
+  background-color: gray;
+  color: brown;
+  float: right;
+  padding: 5px 10px;
+  margin-right: 16px;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+} */
+/* #form{
+  float:right;
+  padding-bottom: 340px;
+}
+form {
+  width: 400px;
+  margin: auto;
+  margin-top: 250px;
+}
+input {
+  padding: 4px 10px;
+  border: 0;
+  font-size: 16px;
+}
+.search {
+  width: 75%;
+}
+.submit {
+  width: 70px;
+  background-color: #1c87c9;
+  color: #ffffff;
+} */
+#ari {
+  float:right;
+  padding-bottom:90px;
+}

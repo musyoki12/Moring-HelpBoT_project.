@@ -1,8 +1,249 @@
 <!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
 <head>
-    <Title>Moringa HelpBot</Title>
-</head>
-<body>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" 
+        content="width=device-width, initial-scale=1.0" />
+<title>..:: Moringa HelpBot::..</title>
+<link rel ="stylesheet" type="text/css" href="index.css">
 
+</head>
+
+<body>
+  <!-- <div id ="sofy"><h1 >Hello .. my name is botSofy </h1></div> -->
+  <div>
+    <img id="bot-image" src="./images/new-bot.jpg"  width="100%" height="auto"/>
+    <h3 class="top-left">Hello i'm botSofy how can I Help?<br><br><br><br><br> <ul>
+      <!-- <li><a href ="#softwares">Help Button</a></li> -->
+    </ul</h3>
+    <!-- <h3 class="centered">
+      <ul>
+        <li><a href ="#softwares">Help Button</a></li>
+      </ul>
+    </h3> -->
+  </div>
+  <div> 
+    <!-- <p> <a name ="softwares"> Lets help you get what you seek</a> </p>
+
+ <div class="vertical-menu">
+    <a href="#" class="active">Software Name</a>
+    <a href="#">visual code Studio</a>
+    <a href="#">Desktop Github</a>
+    <a href="#">RubyonRails</a>
+    <a href="#">Node js</a>
+  </div>
+</div>
+   -->
+   <div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'coding', 'arrow1')" id="defaultOpen">
+      <i class="fas fa-laptop-code"></i>
+      visual code Studio 
+       <span id="arrow1" class="arrow fas fa-caret-right"></span>
+      </button>
+     
+    <button class="tablinks" onclick="openTab(event, 'wordPress', 'arrow2')">
+      <i class="fab fa-wordpress"></i>
+      Github <span id="arrow2" class=" arrow fas fa-caret-right"></span>
+    </button>
+ 
+    <button class="tablinks" onclick="openTab(event, 'videos', 'arrow3')">
+      <i class="fas fa-video"></i>
+      RubyonRails
+      <span id="arrow3" class=" arrow fas fa-caret-right"></span>
+    </button>
+ 
+    <button class="tablinks" onclick="openTab(event, 'photoshop', 'arrow4')">
+      <i class="far fa-image"></i>
+      Node js <span id="arrow4" class=" arrow fas fa-caret-right"></span>
+    </button>
+  </div>
+
+  <button class="tablinks" onclick="openTab(event, 'python', 'arrow5')">
+    <i class="fab fa-wordpress"></i>
+    Python <span id="arrow5" class=" arrow fas fa-caret-right"></span>
+  </button>
+
+  <button class="tablinks" onclick="openTab(event, 'php', 'arrow6')">
+    <i class="fab fa-wordpress"></i>
+    Php<span id="arrow6" class=" arrow fas fa-caret-right"></span>
+  </button>
+
+  <button class="tablinks" onclick="openTab(event, 'git', 'arrow7')">
+    <i class="fab fa-wordpress"></i>
+    Git <span id="arrow7" class=" arrow fas fa-caret-right"></span>
+  </button>
+
+  <button class="tablinks" onclick="openTab(event, 'NetBeans', 'arrow8')">
+    <i class="fab fa-wordpress"></i>
+    NetBeans<span id="arrow8" class=" arrow fas fa-caret-right"></span>
+  </button>
+
+  <button class="tablinks" onclick="openTab(event, 'chrome', 'arrow9')">
+    <i class="fab fa-wordpress"></i>
+    Chrome <span id="arrow9" class=" arrow fas fa-caret-right"></span>
+  </button>
+  <button class="tablinks" onclick="openTab(event, 'Brave', 'arrow10')">
+    <i class="fab fa-wordpress"></i>
+    Brave <span id="arrow10" class=" arrow fas fa-caret-right"></span>
+    <button class="tablinks" onclick="openTab(event, 'refresh', 'arrow11')">
+      <i class="fab fa-wordpress"></i>
+      Refresh<span id="arrow11" class=" arrow fas fa-caret-right"></span>
+    </button>
+  </button> 
+  <article id="ari">
+    <!-- <div id="form"> -->
+    <form >
+      <input type="text" id="search" name="name" value="value" placeholder="Search here!" required />
+      <!-- <input type="submit" name="submit" class="submit" value="Search"  />  -->
+    </form>
+    <div id="match-list"></div>
+    <!-- <textarea id="area">
+    </textarea> -->
+  </article>
+  <!-- <div class="search-bar"><!-- search bar right align -->
+  <!-- <div class="search">
+        <form action="#">
+            <input type="text"
+                placeholder=" Search Any software"
+                name="search">
+            <button>
+                <i class="fa"
+                    style="font-size: 24px;">
+                </i>
+            </button>
+        </form>
+    </div> -->
+</div>  
+   <br>
+   <!-- <br>
+   <br> -->
+  <div id="coding" class="tabcontent">
+    <h3>visual code Studio</h3>
+    <p>vs code  is an open source code editor for all languages
+     
+    </p>
+  </div>
+   
+  <div id="wordPress" class="tabcontent">
+    <h3>Github</h3>
+    <p>GitHub Desktop is an application that enables you to interact with GitHub using a GUI instead of the command line or a web browser.
+      <BR> GitHub Desktop encourages you and your team to collaborate using best practices with Git and GitHub..</p>
+  </div>
+   
+  <div id="videos" class="tabcontent">
+    <h3>RubyonRails</h3>
+    <p>
+      Rails is a development tool which gives web developers a framework, providing structure for all the code they write. <br>The Rails framework helps developers to build websites and applications, because it abstracts and simplifies common repetitive tasks</p>
+  </div>
+  <div id="photoshop" class="tabcontent">
+    <h3>Node js</h3>
+    <p>Node.js (Node) is an open source development platform for executing JavaScript code server-side</p>
+  </div>
+</div>
+ 
+<div id="python" class="tabcontent">
+  <h3>Python</h3>
+  <p>Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.
+        <br>
+    It is used for:
+    <br>
+    web development (server-side)
+    <br>
+    software development
+    <br>
+    mathematics
+    <br>
+    system scripting.
+   
+  </p>
+</div>
+
+<div id="php" class="tabcontent">
+  <h3>Php</h3>
+  <p>PHP is an acronym for "PHP: Hypertext Preprocessor" · PHP is a widely-used, open source scripting language · PHP scripts are executed on the server ·
+   
+  </p>
+</div>
+
+<div id="git" class="tabcontent">
+  <h3>Git</h3>
+  <p>Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
+   
+  </p>
+</div>
+
+<div id="NetBeans" class="tabcontent">
+  <h3>NetBeans</h3>
+  <p>
+    NetBeans IDE is a free and open source integrated development environment for application development on Windows, Mac, Linux, and Solaris operating systems. The IDE simplifies the development of web, enterprise, desktop, and mobile applications that use the Java and HTML5 platforms.
+   
+  </p>
+</div>
+
+<div id="chrome" class="tabcontent">
+  <h3>Chrome</h3>
+  <p>Chrome Developer Tools is a comprehensive toolkit for developers, built directly into the Chrome browser. These tools let you edit web pages in real time, diagnose problems more quickly, and build better websites faster. Even if you're not a developer, though, you can still get some use out of Developer Tools.
+   
+  </p>
+</div>
+
+<div id="Brave" class="tabcontent">
+  <h3>Brave</h3>
+  <p> Brave is a more-or-less standard browser that lets users navigate to websites, run web apps, and display online content.
+   
+  </p>
+</div>
+
+ 
+  <!-- </div> -->
+    <!-- <div class="search-bar">search bar right align -->
+      <!-- <div class="search">
+          <form action="#">
+              <input type="text"
+                  placeholder=" Search Any software"
+                  name="search">
+              <button>
+                  <i class="fa fa-search"
+                      style="font-size: 24px;">
+                  </i>
+              </button>
+          </form>
+      </div>
+  </div></div> -->
+    <script>
+        function openTab(evt, Services, arrows) {
+          var i, tabcontent, tablinks, tabArrow;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+           
+          tabArrow = document.getElementsByClassName("arrow");
+          for (i = 0; i < tabArrow.length; i++) {
+            tabArrow[i].style.display = "none";
+          }
+         
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+           
+          document.getElementById(arrows).style.display = "block";
+          document.getElementById(Services).style.display = "block";
+          evt.currentTarget.className += " active";
+         
+        }
+         
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        </script>
+  <h3 id="DarkModetext">Dark Mode is OFF</h3>
+  <button onclick="darkMode()">Darkmode</button>
+  <button onclick="lightMode()">BlueMode</button>
+  <script src="index.js"></script> 
 </body>
-<html
+</html>
+
+
