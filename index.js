@@ -33,37 +33,79 @@ function darkMode() {
 
 const search =document.getElementById('search');
 const matchList= document.getElementById('match-list')
-
-// search softwares.json and filiter it
-const searchSoftwares =async searchText=>{
-  const res = await fetch('https://enigmatic-coast-25791.herokuapp.com/softwares')
-  const softwares = await res.join();
-
- // console.log(softwares)
-  // get matches tocurrent text input
-}
-// search  softwares.json and filiter it
-let matches=softwares.filiter(software =>{
-  const regex = newRegExp(`^${searchText}`,'gi');
-  return search.name.match(regex) || software.description.match(regex);
-});
-if (searchText.length === 0) {
-  matches = [];
-}
-// console.log(matches);
-
-//show results in html
-const outputHtml = matches =>{
-  if(matches.length > 0){
-    const html = matches.map(match =>
-      `<div class="card card-body mb-1">
-      <h4>${match.name}(${match.description}) <span class="text-primary">${match.capital}</span></h4>
-      <small>author:${match.version}/version:${match.version}</small>
-      </div> `
-       ).join(" ");
-      //  console.log(html)
-      matchList.innerHTML =html;
+const searchButton = document.getElementById('form')
+searchButton.addEventListener("submit",(e)=>{
+  e.preventDefault()
+  if(e.target.name.value === "Node js"){
+    let card = document.createElement("h3")
+    card.setAttribute("class","details")
+    card.textContent = "Node.js (Node) is an open source development platform for executing JavaScript code server-side"
+    matchList.appendChild(card)
   }
+  else if(e.target.name.value === "visual code studio"){
+  let card = document.createElement("h3")
+  card.setAttribute("class","details")
+  card.textContent = "vs code  is an open source code editor for all languages"
+  matchList.appendChild(card)
+
+  }
+  else if(e.target.name.value === "Ruby on Rails"){
+    let card = document.createElement("h3")
+    card.setAttribute("class","details")
+    card.textContent = "Rails is a full-stack framework"
+    matchList.appendChild(card)
+  
+    }
+    else(e.target.name.value === "Ruby on Rails"){
+      let card = document.createElement("h3")
+      card.setAttribute("class","details")
+      card.textContent = "Rails is a full-stack framework"
+      matchList.appendChild(card)
+    
+      }
+})
+// console.log(searchButton)
+// search softwares.json and filiter it
+let searchSoftwares = () => {
+    const url = "https://enigmatic-coast-25791.herokuapp.com/softwares";
+      fetch(url)
+        .then((res) => res.json())
+        .then((data) => {
+          console.log(data);
+          
+          })
+  // get matches to current text input
 }
 
-search.addEventListener('input', ()=> searchSoftwares(search.value));
+// //search  softwares.json and filiter it
+// let matches = data.filter(software =>{
+//   const regex = newRegExp(`^${searchText}`,'gi');
+//   return search.name.match(regex) || software.description.match(regex);
+// });
+// if (searchText.length === 0) {
+//   matches = [];
+// }
+// // console.log(matches);
+
+// //show results in html
+// const outputHtml = matches =>{
+//   if(matches.length > 0){
+//     const html = matches.map(match =>
+//       `<div class="card card-body mb-1">
+//       <h4>${match.name}(${match.description}) <span class="text-primary">${match.capital}</span></h4>
+//       <small>author:${match.version}/version:${match.version}</small>
+//       </div> `
+//        ).join(" ");
+//       //  console.log(html)
+//       matchList.innerHTML =html;
+//   }
+// }
+
+// search.addEventListener('input', ()=> searchSoftwares(search.value));
+
+let initialize = () => {
+        searchSoftwares();
+  
+      };
+      initialize();
+  
