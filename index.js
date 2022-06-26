@@ -50,7 +50,7 @@ searchInput.addEventListener("input", e => {
   softwares.forEach(software => {
     const isVisible =
       software.name.toLowerCase().includes(value) ||
-      software.author.toLowerCase().includes(value)
+      software.current_releases.toLowerCase().includes(value)
     software.element.classList.toggle("hide", !isVisible)
     console.log(softwares)
   })
@@ -64,9 +64,9 @@ fetch("https://enigmatic-coast-25791.herokuapp.com/softwares")
       const header = card.querySelector("[data-header]")
       const body = card.querySelector("[data-body]")
       header.textContent = software.name
-      body.textContent = software.author
+      body.textContent = software.current_releases
       userCardContainer.append(card)
-      return { name: software.name, author: software.author, element: card }
+      return { name: software.name, current_releases: software.current_releases ,element: card }
     })
   })
 
