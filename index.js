@@ -11,65 +11,6 @@ function darkMode() {
     content.innerText = "Dark Mode is OFF";
 
   }
-
-
-
-const search =document.getElementById('search');
-const matchList= document.getElementById('match-list')
-const searchButton = document.getElementById('form')
-searchButton.addEventListener("submit",(e)=>{
-  e.preventDefault()
-  if(e.target.name.value === "Node js"){
-    let card = document.createElement("h3")
-    card.setAttribute("class","details")
-    card.textContent = "Node.js (Node) is an open source development platform for executing JavaScript code server-side"
-    matchList.appendChild(card)
-  }
-  else if(e.target.name.value === "visual code studio"){
-  let card = document.createElement("h3")
-  card.setAttribute("class","details")
-  card.textContent = "vs code  is an open source code editor for all languages"
-  matchList.appendChild(card)
-
-  }
-  else if(e.target.name.value === "Ruby on Rails"){
-    let card = document.createElement("h3")
-    card.setAttribute("class","details")
-    card.textContent = "Rails is a full-stack framework"
-    matchList.appendChild(card)
-  
-    }
-    else if(e.target.name.value === "Github desktop App"){
-      let card = document.createElement("h3")
-      card.setAttribute("class","details")
-      card.textContent = "RGitHub Desktop is an open source tool that enables you to be more productive"
-      matchList.appendChild(card)
-    
-      }
-else{
-  console.log("sorry sofy can't get you what you wanted.please buy me a cup of coffee ")
-}
-})
-// console.log(searchButton)
-// search softwares.json and filiter it
-let searchSoftwares = () => {
-    const url = "https://enigmatic-coast-25791.herokuapp.com/softwares";
-      fetch(url)
-        .then((res) => res.json())
-        .then((data) => {
-          console.log(data);
-          
-          })
-  // get matches to current text input
-  
-}
-
-let initialize = () => {
-        searchSoftwares();
-  
-      };
-      initialize();
-  
       function openTab(evt, Services, arrows) {
     var i, tabcontent, tablinks, tabArrow;
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -96,3 +37,46 @@ let initialize = () => {
   // Get the element with id="defaultOpen" and click on it
   document.getElementById("defaultOpen").click();
 const select = document.querySelector('.option')
+
+
+const userCardTemplate = document.querySelector("[data-user-template]")
+const userCardContainer = document.querySelector("[data-user-cards-container]")
+const searchInput = document.querySelector("[data-search]")
+
+let softwares = []
+
+searchInput.addEventListener("input", e => {
+  const value = e.target.value.toLowerCase()
+  softwares.forEach(software => {
+    const isVisible =
+      software.name.toLowerCase().includes(value) ||
+      software.author.toLowerCase().includes(value)
+    software.element.classList.toggle("hide", !isVisible)
+    console.log(softwares)
+  })
+})
+
+fetch("https://enigmatic-coast-25791.herokuapp.com/softwares")
+  .then(res => res.json())
+  .then(data => {
+    softwares = data.map(software => {
+      const card = userCardTemplate.content.cloneNode(true).children[0]
+      const header = card.querySelector("[data-header]")
+      const body = card.querySelector("[data-body]")
+      header.textContent = software.name
+      body.textContent = software.author
+      userCardContainer.append(card)
+      return { name: software.name, author: software.author, element: card }
+    })
+  })
+
+
+
+
+
+
+
+
+
+
+  

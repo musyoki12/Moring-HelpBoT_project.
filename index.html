@@ -92,14 +92,27 @@
       Refresh<span id="arrow11" class=" arrow fas fa-caret-right"></span>
     </button>
   </button> 
-  <article id="ari">
+  <!-- <<article id="ari">
     <form id="form">
       <label for="search" ></label>
       <input type="text"  name="name" value="Type a name of software here" />
       <input type="submit" name="submit"  value="Search" /> 
     </form>
-    <div id="match-list"></div>
-     </article>
+    <div id="match-list"></div> -->
+     
+      <article id="ari">
+     <div class="search-wrapper">
+      <label for="search">Search Softwares </label>
+      <input type="search" id="search" data-search>
+    </div>
+    <div class="user-cards" data-user-cards-container></div>
+    <template data-user-template>
+      <div class="card">
+        <div class="header" data-header></div>
+        <div class="body" data-body></div>
+      </div>
+    </template>
+  </article> 
 </div>  
    <br>
    <!-- <br>
